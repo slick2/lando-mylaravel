@@ -5,7 +5,7 @@ config:
 services:
   appserver:
     type: php:8.2    
-    build:
+    run:
       - "bash build.sh"
   phpmyadmin:
     type: phpmyadmin:5.2
