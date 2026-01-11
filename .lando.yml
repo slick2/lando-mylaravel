@@ -7,4 +7,5 @@ services:
     type: php:8.2    
     build:
       - "bash build.sh"
-
+  phpmyadmin:
+    type: phpmyadmin:5.2
