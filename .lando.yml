@@ -1,0 +1,10 @@
+name: mylaravel
+recipe: laravel
+config:
+  webroot: laravel/public
+services:
+  appserver:
+    type: php:8.2    
+    build:
+      - "bash build.sh"
+
