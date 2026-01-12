@@ -1,1 +1,3 @@
-laravel
+laravel/.env.example
+laravel/config
+laravel/tests
