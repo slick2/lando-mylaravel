@@ -1,10 +1,9 @@
 <?php
 
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return "welcome, laravel";
-});
+Route::get('/', [welcomeController::class, 'index']);
 
 Route::get('/home', function () {
    return view('home', ['name' => "xCarey"]);
