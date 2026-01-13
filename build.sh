@@ -10,5 +10,11 @@ fi
 # TODO: check $LANDO variable if present
 cp .config/.env laravel/.env
 # setup database
-cd laravel && php artisan migrate && cd ..
+cd laravel && php artisan migrate 
+
+# install breeze
+composer require laravel/breeze --dev
+php artisan breeze:install blade
+php artisan migrate
+npm run build
 
